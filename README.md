@@ -1,16 +1,21 @@
 # RBE595 - Humanoid Robotics - Project 1
 Project 1 for WPI RBE595 - Humanoid Robotics class
+
 Making Atlas walk in a circle
+
 By John Dong and Andrew Euredijian
 
 ## Usage
 To run the code, launch the Atlas simulation as usual:
+
 `roslauch ihmc_atlas_ros ihmc_atlas_scs_demo01.launch use_local_build:=true`
 
 Make sure to source this package:
+
 `source devel/setup.bash`
 
 Then you can use the following command to make the robot walk in a circle:
+
 `rosrun project1 walk_circle_node <radius> <# steps>`
 
 Where:
