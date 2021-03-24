@@ -18,7 +18,7 @@ Then you can use the following command to make the robot walk in a circle:
 
 Where:
  - radius: radius of the desired circle in meters
- - \# steps: number of steps to take to complete the circle
+ - \# steps: number of steps to take to complete the circle (recommend at least 12)
 
 The robot will then walk in a counter-clockwise circle of the given radius in the given number of steps.  
 
