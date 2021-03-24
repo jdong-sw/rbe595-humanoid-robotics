@@ -4,6 +4,9 @@ Making Atlas walk in a circle
 By John Dong and Andrew Euredijian
 
 ## Usage
+First build the package by running this command in the project folder:  
+`catkin_make`
+
 To run the code, launch the Atlas simulation as usual:  
 `roslauch ihmc_atlas_ros ihmc_atlas_scs_demo01.launch use_local_build:=true`
 
