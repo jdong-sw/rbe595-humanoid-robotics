@@ -20,7 +20,10 @@ Where:
  - radius: radius of the desired circle in meters
  - \# steps: number of steps to take to complete the circle
 
-The robot will then walk in a counter-clockwise circle of the given radius in the given number of steps.
+The robot will then walk in a counter-clockwise circle of the given radius in the given number of steps.  
+
+A good demonstration of this can be seen with the command:  
+`rosrun project1 walk_circle_node 1 24`
 
 ## Description
 The overall operation of this code revolves around the `stepAtPose` function provided by the `RobotWalker` class in the TOUGH API. `stepAtPose` allows us to command a specified foot to move to a specified pose with the options of queueing the pose in a queue managed internally by the `RobotWalker` class, waiting for a step to complete before executing a new one, and specifying a reference frame for the given pose. Our code utilizes all three of these options by enabling the use of the internal queue, enabling the wait for a step to run only once the previous step completes its movement, and setting the reference frame to the corresponding foot. For example, if the left foot was being moved, the reference frame would be set to the left foot. By setting up the motion to use the corresponding foot as the reference frame, the pose goal for each step becomes the same and the need to keep track of current position/orientation is removed.
